@@ -4,6 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "cypress:open": "cypress open",
+  "cypress:run": "cypress run",
     "start": "npm run client:build && npm run server",
     "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
     "server": "cd server && npm start",
@@ -14,6 +16,7 @@
     "build": "cd server && npm run build",
     "seed": "cd server && npm run seed",
     "render-build": "npm install && npm run build"
+
   },
   "keywords": [],
   "author": "",

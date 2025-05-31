@@ -10,6 +10,7 @@
     "dev": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node dist/seeds/seed.js"
+    
   },
   "types": "./dist/index.d.ts",
   "nodemonConfig": {
