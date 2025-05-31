@@ -11,6 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node dist/seeds/seed.js"
   },
+  "types": "./dist/index.d.ts",
   "nodemonConfig": {
     "watch": [
       "src"
@@ -22,13 +23,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
-    "mongoose": "^8.4.1"
+    "express": "^4.21.2",
+    "mongoose": "^8.15.1",
+    "dotenv": "^16.5.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.12.7",
-    "dotenv": "^16.4.5",
+    "@types/express": "^4.17.22",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^20.17.57",
     "typescript": "^5.5.3"
   }
 }

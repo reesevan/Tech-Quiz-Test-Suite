@@ -1,4 +1,14 @@
 import type { Question } from '../models/Question.js';
+export const getRandomQuestion = async () => {
+  try {
+    const res = await fetch('/random');
+    if (!res.ok) throw new Error('Network response was not ok');
+    return await res.json();
+  } catch (err) {
+    console.error('Error fetching question:', err);
+    return null;
+  }
+};
 
 export const getQuestions = async (): Promise<Question[]> => {
   try {
@@ -13,3 +23,4 @@ export const getQuestions = async (): Promise<Question[]> => {
     throw error;
   }
 };
+
